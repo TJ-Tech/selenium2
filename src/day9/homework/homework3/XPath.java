@@ -1,5 +1,8 @@
 package day9.homework.homework3;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class XPath {
     /**
      * Open "http://the-internet.herokuapp.com/login"
@@ -13,4 +16,8 @@ public class XPath {
      *      find "Log out" button and click it
      *      find and verify text "You logged out of the secure area!"
      * */
-}
+    public static void main(String[] args) {
+        System.setProperty( "webdriver.chrome.driver","C:\\Users\\Selenium\\chromedriver.exe" );
+        WebDriver driver = new ChromeDriver();
+        driver.get( "http://the-internet.herokuapp.com/login" );
+}}

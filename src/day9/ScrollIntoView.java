@@ -11,8 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.TimeUnit;
 
 public class ScrollIntoView {
-    public static void main(String[] args) throws InterruptedException {
-        System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
+    public static void main(String[] args){
+        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\Selenium\\chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
         driver.get( "https://ultimateqa.com/automation/fake-pricing-page" );
 
