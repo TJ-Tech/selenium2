@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ChromeBrowser {
     public static void main(String[] args) {
-        System.setProperty( "webdriver.chrome.driver", "/Users/technostudy/Selenium/ChromeDriver/chromedriver" );
+        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\Selenium\\chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
         driver.get("https://test-basqar.mersys.io");
         driver.manage().window().maximize();

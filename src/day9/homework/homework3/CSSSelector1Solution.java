@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CSSSelector1Solution {
     public static void main(String[] args) {
-        System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
+        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\Selenium\\chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
         driver.get( "https://ultimateqa.com/complicated-page/" );
 
@@ -22,6 +22,6 @@ public class CSSSelector1Solution {
         String textToTest3 = driver.findElement( By.cssSelector( ".et_pb_text_inner > ul > li:last-child" ) ).getText();
         System.out.println( textToValidate3.equals( textToTest3 ) ? "Success!" : "Failure" );
 
-        driver.quit();
+      driver.quit();
     }
 }
